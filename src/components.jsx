@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix} from './functions.js';
 
 function Question1(){
     return <section>
@@ -20,4 +20,14 @@ function Question2(){
     </section>
 }
 
-export {Question1, Question2}
+function Question3(){
+    return <section>
+3. Write a function that determines the secondary rgb_colour from mixing two primary RGB colours.
+<h2>results</h2>
+<p>colour_mix("red","blue") == "{colour_mix("blue", "red")}"</p>
+<p>colour_mix("red","green") == "{colour_mix("red", "green")}"</p>
+<p>colour_mix("blue","green") == "{colour_mix("blue", "green")}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question3}
