@@ -34,7 +34,8 @@ function colour_mix(rgb_colour1, rgb_colour2){
 
     let rgb_colour;
 
-    if (rgb_colour1 == "red" && rgb_colour2 == "blue" || rgb_colour1 == "blue" && rgb_colour2 == "red" ){
+    if (rgb_colour1 == "red" && rgb_colour2 == "blue"){
+    //if (rgb_colour1 == "red" && rgb_colour2 == "blue" || rgb_colour1 == "blue" && rgb_colour2 == "red" ){
         rgb_colour = "fuchsia";
 
     } else if (rgb_colour1 == "red" && rgb_colour2 == "green"){
@@ -55,6 +56,7 @@ function colour_mix(rgb_colour1, rgb_colour2){
     } else {
         rgb_colour = "Error";
     }
+
     return rgb_colour;
 }
 
