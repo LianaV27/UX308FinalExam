@@ -6,21 +6,11 @@ function Question1(){
       <h2>results</h2>
       <p>hello("Rich") == "{hello('Rich')}"</p>
       <p>hello("Bill") == "{hello('Bill')}"</p>
-      <p>hello("Chris") == "{hello('Chris')}"</p>
+      <p>hello("Liana") == "{hello('Liana')}"</p>
     </section>;
 }
 
 function Question2(){
-    return <section>
-2. Write a function that converts from fahrenheit to celsius        
-<h2>results</h2>
-<p>fahrenheitToCelsius(32) == "{fahrenheitToCelsius(32)}"</p>
-<p>fahrenheitToCelsius(212) == "{fahrenheitToCelsius(212)}"</p>
-<p>fahrenheitToCelsius(70) == "{fahrenheitToCelsius(70)}"</p>
-    </section>
-}
-
-function Question56(){
     return <section>
 2. Write a function that converts from fahrenheit to celsius        
 <h2>results</h2>
@@ -40,4 +30,4 @@ function Question3(){
     </section>
 }
 
-export {Question1, Question2, Question3, Question56}
+export {Question1, Question2, Question3}
