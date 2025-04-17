@@ -1,4 +1,4 @@
-import {  colour_mix, largest_product, day_of_the_week, pay_raise, is_leap } from './functions.js';
+import { colour_mix, largest_product, day_of_the_week, pay_raise, is_leap } from './functions.js';
 
 function Question1() {
     return <section>
@@ -16,9 +16,9 @@ function Question2() {
         <h2>Question 2</h2>
         2. Returns the product of the two largest values of val1, val2, and val3.
         <h3>results</h3>
-        <p>largest_product(-4,10,18) == "{largest_product(-4,10,18)}"</p>
-        <p>largest_product(5,4,3) == "{largest_product(5,4,3)}"</p>
-        <p>largest_product(6,-5,7) == "{largest_product(6,-5,7)}"</p>
+        <p>largest_product(-4,10,18) == "{largest_product(-4, 10, 18)}"</p>
+        <p>largest_product(5,4,3) == "{largest_product(5, 4, 3)}"</p>
+        <p>largest_product(6,-5,7) == "{largest_product(6, -5, 7)}"</p>
     </section>
 }
 
@@ -38,9 +38,9 @@ function Question4() {
         <h2>Question 4</h2>
         4. Calculates pay raises for employees.
         <h3>results</h3>
-        <p>pay_raise(F,10,100) == "{pay_raise("F",10,100)}"</p>
-        <p>pay_raise(P,5,50) == "{pay_raise("P",5,50)}"</p>
-        <p>pay_raise(P,4,25) == "{pay_raise("P",4,25)}"</p>
+        <p>pay_raise(F,10,100) == "{pay_raise("F", 10, 100)}"</p>
+        <p>pay_raise(P,5,50) == "{pay_raise("P", 5, 50)}"</p>
+        <p>pay_raise(P,4,25) == "{pay_raise("P", 4, 25)}"</p>
     </section>
 }
 
