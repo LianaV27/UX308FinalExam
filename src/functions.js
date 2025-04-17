@@ -7,7 +7,12 @@ function fahrenheitToCelsius(fahrenheit){
     return celsius;
 }
 
-function colour_mix(rgb_colour1, rgb_colour2){
+function calculateAcres(squareft){
+    const acres = squareft/43560
+    return acres;
+}
+
+/*function colour_mix(rgb_colour1, rgb_colour2){
 
     let rgb_colour;
 
@@ -35,6 +40,6 @@ function colour_mix(rgb_colour1, rgb_colour2){
     }
 
     return rgb_colour;
-}
+}*/
 
-export {hello, fahrenheitToCelsius, colour_mix}
+export {hello, fahrenheitToCelsius, calculateAcres}

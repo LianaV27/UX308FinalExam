@@ -1,4 +1,4 @@
-import {fahrenheitToCelsius, hello, colour_mix} from './functions.js';
+import {fahrenheitToCelsius, hello, calculateAcres} from './functions.js';
 
 function Question1(){
     return <section>
@@ -20,7 +20,17 @@ function Question2(){
     </section>
 }
 
-function Question3(){
+function Question3() {
+    return <section>
+        2. There are 43,560 square feet per acre. Write a program that converts square feet to acres. Test at least 3 conversions.
+        <h2>results</h2>
+        <p>squareft(43560) == "{calculateAcres(43560)}"</p>
+        <p>squareft(87120) == "{calculateAcres(87120)}"</p>
+        <p>squareft(130680) == "{calculateAcres(130680)}"</p>
+    </section>
+}
+
+/*function Question4(){
     return <section>
 3. Write a function that determines the secondary rgb_colour from mixing two primary RGB colours.
 <h2>results</h2>
@@ -28,6 +38,6 @@ function Question3(){
 <p>colour_mix("red","green") == "{colour_mix('red', 'green')}"</p>
 <p>colour_mix("blue","green") == "{colour_mix('blue', 'green')}"</p>
     </section>
-}
+}*/
 
 export {Question1, Question2, Question3}
