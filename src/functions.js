@@ -48,19 +48,7 @@ function largest_product(val1, val2, val3) {
     return product;
 }
 
-/*
-    -------------------------------------------------------
-    Returns the name of a day of the week given an integer day number.
-    Day 1 is "Sunday", day 7 is "Saturday".
-    Returns "Error" if the number is not valid.
-    Use: day = day_of_the_week(day_num)
-    -------------------------------------------------------
-    Parameters:
-        day_num - day number (1 <= int <= 7)
-    Returns:
-        day - name of a day of the week (str)
-    ------------------------------------------------------
-    */
+
 function day_of_the_week(day_num) {
 
     let day;
@@ -92,27 +80,6 @@ function day_of_the_week(day_num) {
     return day;
 }
 
-/*
--------------------------------------------------------
-Calculates pay raises for employees. Pay raises are based on:
-status: Full Time ('F)' or Part Time ('P')
-and years of service
-Raises are:
-    5% for full time greater than or equal to 10 years service
-    1.5% for full time less than 4 years service
-    3% for part time greater than 10 years service
-    1% for part time less than 4 years service
-    2% for all others
-Use: new_salary = pay_raise(status, years, salary)
--------------------------------------------------------
-Parameters:
-    status - employment type (str - 'F' or 'P')
-    years - number of years employed (int > 0)
-    salary - current salary (float > 0)
-Returns:
-    new_salary - employee's new salary (float).
--------------------------------------------------------
-*/
 
 function pay_raise(status, years, salary) {
     let new_salary;
@@ -122,12 +89,12 @@ function pay_raise(status, years, salary) {
     } else if (status == "F" && years < 4) {
         new_salary = salary * 0.015 + salary;
 
-    } else if (status == "P" && years >10) {
+    } else if (status == "P" && years > 10) {
         new_salary = salary * 0.03 + salary;
-    
+
     } else if (status == "P" && years < 4) {
         new_salary = salary * 0.01 + salary;
-    
+
     } else {
         new_salary = salary * 0.02 + salary;
     }
@@ -135,4 +102,41 @@ function pay_raise(status, years, salary) {
     return new_salary;
 }
 
-export { colour_mix, largest_product, day_of_the_week, pay_raise }
+/*
+   -------------------------------------------------------
+   Determines if a year is a leap year. Every year that is
+   exactly divisible by four is a leap year, except for years
+   that are exactly divisible by 100, but these centurial years
+   are leap years if they are exactly divisible by 400. 
+   
+   For
+   example, the years 1700, 1800, and 1900 are not leap years,
+   but the years 1600 and 2000 are.
+   Use: result = is_leap(year)
+   -------------------------------------------------------
+   Parameters:
+       year - a year (int > 0)
+   Returns:
+       result - True if year is a leap year,
+           False otherwise (boolean)
+   ------------------------------------------------------
+   */
+
+function is_leap(year) {
+
+    let result;
+
+    if (year % 400 == 0) {
+        result = "True";
+
+    } else if (year % 4 == 0 && year % 100 != 0) {
+        result = "True";
+
+    } else {
+        result = "False";
+    }
+
+    return result;
+}
+
+export { colour_mix, largest_product, day_of_the_week, pay_raise, is_leap }

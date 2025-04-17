@@ -1,4 +1,4 @@
-import {  colour_mix, largest_product, day_of_the_week, pay_raise } from './functions.js';
+import {  colour_mix, largest_product, day_of_the_week, pay_raise, is_leap } from './functions.js';
 
 function Question1() {
     return <section>
@@ -25,7 +25,7 @@ function Question2() {
 function Question3() {
     return <section>
         <h2>Question 3</h2>
-        2. Returns the name of a day of the week given an integer day number.
+        3. Returns the name of a day of the week given an integer day number.
         <h3>results</h3>
         <p>day_of_the_week(1) == "{day_of_the_week(1)}"</p>
         <p>day_of_the_week(5) == "{day_of_the_week(5)}"</p>
@@ -36,14 +36,24 @@ function Question3() {
 function Question4() {
     return <section>
         <h2>Question 4</h2>
-        2. Calculates pay raises for employees.
+        4. Calculates pay raises for employees.
         <h3>results</h3>
         <p>pay_raise(F,10,100) == "{pay_raise("F",10,100)}"</p>
         <p>pay_raise(P,5,50) == "{pay_raise("P",5,50)}"</p>
         <p>pay_raise(P,4,25) == "{pay_raise("P",4,25)}"</p>
-
     </section>
 }
 
-export { Question1, Question2, Question3, Question4 }
+function Question5() {
+    return <section>
+        <h2>Question 5</h2>
+        5. Determines if a year is a leap year.
+        <h3>results</h3>
+        <p>is_leap(1650) == "{is_leap(1650)}"</p>
+        <p>is_leap(2012) == "{is_leap(2012)}"</p>
+        <p>is_leap(1975) == "{is_leap(1975)}"</p>
+    </section>
+}
+
+export { Question1, Question2, Question3, Question4, Question5 }
 
