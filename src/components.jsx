@@ -1,12 +1,12 @@
-import {fahrenheitToCelsius, hello, calculateAcres} from './functions.js';
+import {fahrenheitToCelsius, hello, colour_mix} from './functions.js';
 
 function Question1(){
     return <section>
 1. Write a function that takes a _name_ as an argument and _returns a string_ that _contains "hello"_ and the name paramerer. Test at least 3 names. <br />*Note ... I solved this one already
       <h2>results</h2>
       <p>hello("Rich") == "{hello('Rich')}"</p>
-      <p>hello("Bill") == "{hello('Bill')}"</p>
-      <p>hello("Liana") == "{hello('Liana')}"</p>
+      <p>hello("Billl") == "{hello('Billl')}"</p>
+      <p>hello("Liana") == "{hello("Liana")}"</p>
     </section>;
 }
 
@@ -20,17 +20,7 @@ function Question2(){
     </section>
 }
 
-function Question3() {
-    return <section>
-        2. There are 43,560 square feet per acre. Write a program that converts square feet to acres. Test at least 3 conversions.
-        <h2>results</h2>
-        <p>squareft(43560) == "{calculateAcres(43560)}"</p>
-        <p>squareft(87120) == "{calculateAcres(87120)}"</p>
-        <p>squareft(130680) == "{calculateAcres(130680)}"</p>
-    </section>
-}
-
-/*function Question4(){
+function Question3(){
     return <section>
 3. Write a function that determines the secondary rgb_colour from mixing two primary RGB colours.
 <h2>results</h2>
@@ -38,6 +28,7 @@ function Question3() {
 <p>colour_mix("red","green") == "{colour_mix('red', 'green')}"</p>
 <p>colour_mix("blue","green") == "{colour_mix('blue', 'green')}"</p>
     </section>
-}*/
+}
 
 export {Question1, Question2, Question3}
+

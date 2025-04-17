@@ -7,20 +7,16 @@ function fahrenheitToCelsius(fahrenheit){
     return celsius;
 }
 
-function calculateAcres(squareft){
-    const acres = squareft/43560
-    return acres;
-}
 
-/*function colour_mix(rgb_colour1, rgb_colour2){
+function colour_mix(rgb_colour1, rgb_colour2){
 
     let rgb_colour;
 
     if (rgb_colour1 == "red" && rgb_colour2 == "blue"){
-    //if (rgb_colour1 == "red" && rgb_colour2 == "blue" || rgb_colour1 == "blue" && rgb_colour2 == "red" ){
         rgb_colour = "fuchsia";
 
-    } else if (rgb_colour1 == "red" && rgb_colour2 == "green"){
+    } 
+    else if (rgb_colour1 == "red" && rgb_colour2 == "green"){
         rgb_colour = "yellow";
 
     } else if (rgb_colour1 == "green" && rgb_colour2 == "blue"){
@@ -40,6 +36,6 @@ function calculateAcres(squareft){
     }
 
     return rgb_colour;
-}*/
+}
 
-export {hello, fahrenheitToCelsius, calculateAcres}
+export {hello, fahrenheitToCelsius, colour_mix}
