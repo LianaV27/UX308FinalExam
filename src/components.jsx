@@ -1,7 +1,8 @@
-import { fahrenheitToCelsius, hello, colour_mix } from './functions.js';
+import { fahrenheitToCelsius, hello, colour_mix, largest_product } from './functions.js';
 
 function Question1() {
     return <section>
+        <h2>Question 1</h2>
         1. Write a function that takes a _name_ as an argument and _returns a string_ that _contains "hello"_ and the name parameter. Test at least 3 names. <br />*Note ... I solved this one already
         <h2>results</h2>
         <p>hello("Rich") == "{hello('Rich')}"</p>
@@ -12,6 +13,7 @@ function Question1() {
 
 function Question2() {
     return <section>
+         <h2>Question 2</h2>
         2. Write a function that converts from fahrenheit to celsius
         <h2>results</h2>
         <p>fahrenheitToCelsius(32) == "{fahrenheitToCelsius(32)}"</p>
@@ -22,7 +24,8 @@ function Question2() {
 
 function Question3() {
     return <section>
-        3. Write a function that determines the secondary rgb_colour from mixing two primary RGB colours.
+        <h2>Question 3</h2>
+        3. Determines the secondary rgb_colour from mixing two primary RGB colours.
         <h2>results</h2>
         <p>colour_mix("red","blue") == "{colour_mix('blue', 'red')}"</p>
         <p>colour_mix("red","green") == "{colour_mix('red', 'green')}"</p>
@@ -30,5 +33,14 @@ function Question3() {
     </section>
 }
 
-export { Question1, Question2, Question3 }
+function Question4() {
+    return <section>
+        <h2>Question 4</h2>
+        1. Returns the product of the two largest values of val1, val2, and val3.
+        <h2>results</h2>
+        <p>largest_product(-8,12,20) == "{largest_product(-8,12,20)}"</p>
+    </section>
+}
+
+export { Question1, Question2, Question3, Question4 }
 
