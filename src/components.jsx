@@ -27,9 +27,9 @@ function Question3() {
         <h2>Question 3</h2>
         3. Determines the secondary rgb_colour from mixing two primary RGB colours.
         <h2>results</h2>
-        <p>colour_mix("red","blue") == "{colour_mix('blue', 'red')}"</p>
-        <p>colour_mix("red","green") == "{colour_mix('red', 'green')}"</p>
-        <p>colour_mix("blue","green") == "{colour_mix('blue', 'green')}"</p>
+        <p>colour_mix("blue", "red") == "{colour_mix("blue", "red")}"</p>
+        <p>colour_mix("red", "green") == "{colour_mix("green", "red")}"</p>
+        <p>colour_mix("blue", "green") == "{colour_mix("green", "blue")}"</p>
     </section>
 }
 
